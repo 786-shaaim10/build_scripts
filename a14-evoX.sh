@@ -3,19 +3,19 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/Evolution-X/manifest -b udc --git-lfs
+repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b a14-crd .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b 14/Everest .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
 # Sync
-/opt/crave/resync.sh
+/opt/crave/resync.sh && repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 echo "============="
 echo "Sync success"
 echo "============="
@@ -45,4 +45,4 @@ make installclean
 echo "============="
 
 # Build rom
-m evolution
+mka everest 
