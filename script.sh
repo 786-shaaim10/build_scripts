@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b rise-b .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b 15 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -22,9 +22,9 @@ echo "============="
 
 
 # Export
-export BUILD_USERNAME=FARHAN_UN
+export BUILD_USERNAME=FARHAN
 export BUILD_HOSTNAME=crave
-export MITHORIUM_QCOM_HALS_DEFAULT_VARIANT=LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
+#export MITHORIUM_QCOM_HALS_DEFAULT_VARIANT=LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
 echo "======= Export Done ======"
 
 # Set up build environment
