@@ -58,7 +58,7 @@ cd ../../
 #cd ../../
 
 # Set up build environment
-export BUILD_USERNAME=tavukkdoner 
+export BUILD_USERNAME=devil 
 export BUILD_HOSTNAME=crave 
 
 source build/envsetup.sh
