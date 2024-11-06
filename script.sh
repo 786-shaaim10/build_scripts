@@ -27,6 +27,8 @@ git remote add tmpRepo https://github.com/Gtajisan/android_packages_apps_Setting
 git fetch tmpRepo 15.0
 git cherry-pick 860634b
 git cherry-pick 30ec96a
+git cherry-pick 730b16a
+git cherry-pick 2afa6d1
 # https://github.com/crdroidandroid/android_packages_apps_Settings/commit/c6fdcc764c038007993045dfd5cb17999ebf00fb
 git revert c6fdcc7
 git remote remove tmpRepo
