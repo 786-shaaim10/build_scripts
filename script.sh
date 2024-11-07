@@ -62,6 +62,7 @@ cd ../../
 # Set up build environment
 export BUILD_USERNAME=devil 
 export BUILD_HOSTNAME=crave 
+export MITHORIUM_QCOM_HALS_DEFAULT_VARIANT=LA.UM.9.6.4.r1-05500-89xx.QSSI13.0
 
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/402103
 # build command 
