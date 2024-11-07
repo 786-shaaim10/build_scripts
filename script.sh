@@ -63,15 +63,8 @@ cd ../../
 export BUILD_USERNAME=devil 
 export BUILD_HOSTNAME=crave 
 
-source build/envsetup.sh
-
-
-# Build the ROM
-# lunch lineage_Mi439-ap2a-userdebug && make installclean && mka bacon
-
-# Build the ROM
-# lunch lineage_Mi439_4_19-ap2a-userdebug && make installclean && mka bacon
-
 # https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/402103
+# build command 
+. build/envsetup.sh
+brunch Mi439_4_19
 lunch lineage_Mi439_4_19-ap3a-userdebug && make installclean && mka bacon
-# lunch lineage_Mi439_4_19-ap3a-eng && make installclean && mka bacon
