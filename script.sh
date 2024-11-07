@@ -14,31 +14,28 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# build
-/opt/crave/resync.sh
-echo "============="
-echo "Sync success"
-echo "============="
-
-#  remove error 
-rm -rf external/chromium-webview  
-echo "======= remove Done ======"
-
-#  fix error 
-rm -rf packages/apps/ParanoidSense
-echo "=======  Done ======"
+# Sync the repositories
+/opt/crave/resync.sh && repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+echo "============================"
 
 # Export
-export BUILD_USERNAME=FARHAN•XD
+export BUILD_USERNAME=FARHAN 
 export BUILD_HOSTNAME=crave
+export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 echo "======= Export Done ======"
 
+
 # Set up build environment
-source build/envsetup.sh
+. build/envsetup.sh
 echo "====== Envsetup Done ======="
 
-# lunch 
+#  remove to fix build error 
+rm -rf external/chromium-webview
+echo "============="
+echo "Removing Done"
+echo "============="
+
+# Lunch
 . build/envsetup.sh
 goafterlife Mi439_4_19
 goafterlife Mi439_4_19 userdebug
-
