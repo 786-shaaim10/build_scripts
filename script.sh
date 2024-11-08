@@ -14,9 +14,9 @@ echo "============================"
 echo "Local manifest clone success"
 echo "============================"
 
-# Sync the repositories
-/opt/crave/resync.sh 
-echo "============================"
+# Sync
+/opt/crave/resync.sh
+echo "==============="
 
 # Export
 export BUILD_USERNAME=FARHAN 
