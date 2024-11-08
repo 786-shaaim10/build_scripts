@@ -15,7 +15,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Sync the repositories
-/opt/crave/resync.sh && repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+/opt/crave/resync.sh 
 echo "============================"
 
 # Export
@@ -23,11 +23,6 @@ export BUILD_USERNAME=FARHAN
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 echo "======= Export Done ======"
-
-
-# Set up build environment
-. build/envsetup.sh
-echo "====== Envsetup Done ======="
 
 #  remove to fix build error 
 rm -rf external/chromium-webview
