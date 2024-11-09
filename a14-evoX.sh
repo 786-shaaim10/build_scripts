@@ -2,14 +2,15 @@
 
 rm -rf .repo/local_manifests/
 
-# repo init rom
-repo init --depth=1 -u https://github.com/ProjectSakura/android.git -b 14 --git-lfs
+
+# Initialize local repository
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b a14-crd .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests -b Alphadroid/14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -28,7 +29,7 @@ echo "============="
 # echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN 
+export BUILD_USERNAME=shaaimgazi
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
