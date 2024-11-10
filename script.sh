@@ -2,14 +2,15 @@
 
 rm -rf .repo/local_manifests/
 
-# repo init rom
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
+
+# Initialize local repository
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-14 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b Matrixx-14 .repo/local_manifests
+git clone https://github.com/Gtajisan/local_manifests_clo -b Alpha/14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -21,7 +22,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN
+export BUILD_USERNAME=shaaimgazi10
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -35,6 +36,6 @@ echo "======= Export Done ======"
 
 # Lunch  
 . build/envsetup.sh
-brunch Mi439_4_19
-brunch Mi439_4_19 userdebug
+brunch mi439
+brunch mi439 userdebug
 
