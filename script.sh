@@ -36,6 +36,6 @@ echo "============="
 
 # Lunch  
 . build/envsetup.sh
-brunch mi439
 brunch mi439 userdebug
+brunch mi439
 
