@@ -27,12 +27,12 @@ export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
 # Set up build environment
-#source build/envsetup.sh
-#echo "====== Envsetup Done ======="
+source build/envsetup.sh
+echo "====== Envsetup Done ======="
 
 # Lunch
-#lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap3a-userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
-#echo "============="
+lunch lineage_mi439-userdebug || lunch lineage_mi439-ap3a-userdebug || lunch lineage_mi439-ap2a-userdebug
+echo "============="
 
 # Lunch  
 . build/envsetup.sh
