@@ -10,7 +10,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/786-shaaim10/local_manifests_clo -b Alpha/14 .repo/local_manifests
+git clone https://github.com/786-shaaim10/local_manifests -b bliss/14 .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -36,4 +36,4 @@ echo "====== Envsetup Done ======="
 
 # Lunch  
  . build/envsetup.sh
- blissify deviceCodename
+ blissify Mi439_4_19
