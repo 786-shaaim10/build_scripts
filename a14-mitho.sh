@@ -36,4 +36,5 @@ echo "====== Envsetup Done ======="
 
 # Lunch  
  . build/envsetup.sh
- blissify Mi439_4_19
+blissify -c -v Mi439_4_19 || blissify -c -v Mi439_4_19 || blissify Mi439_4_19
+ 
