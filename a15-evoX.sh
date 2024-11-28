@@ -9,7 +9,7 @@ echo "Repo init success"
 echo "=================="
 
 # Local manifests
-git clone https://github.com/Gtajisan/local_manifests -b a15/master .repo/local_manifests
+git clone https://github.com/786-shaaim10/local_manifests -b a15/master .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -28,7 +28,7 @@ echo "============="
 # echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN 
+export BUILD_USERNAME=786-shaaim10 
 export BUILD_HOSTNAME=crave
 echo "======= Export Done ======"
 
@@ -42,6 +42,6 @@ make installclean
 mka bacon
 
 # lunch 
-. build/envsetup.sh
-brunch Mi439_4_19 userdebug
-brunch Mi439_4_19
+#. build/envsetup.sh
+#brunch Mi439_4_19 userdebug
+#brunch Mi439_4_19
