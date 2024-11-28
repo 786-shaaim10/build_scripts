@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/crdroidandroid/android.git -b 15.0 --git-lfs
+repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -39,9 +39,4 @@ echo "====== Envsetup Done ======="
 # Lunch
 lunch lineage_Mi439_4_19-userdebug || lunch lineage_Mi439_4_19-ap3a-userdebug || lunch lineage_Mi439_4_19-ap2a-userdebug
 make installclean
-mka bacon
-
-# lunch 
-#. build/envsetup.sh
-#brunch Mi439_4_19 userdebug
-#brunch Mi439_4_19
+m evolution
