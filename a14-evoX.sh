@@ -40,6 +40,9 @@ echo "====== Envsetup Done ======="
 lunch everest_mi439-userdebug || lunch everest_mi439-ap3a-userdebug || lunch everest_mi439-ap2a-userdebug
 echo "============="
 
+# one more 
+lunch lineage_mi439-userdebug || lunch lineage_mi439-ap4a-userdebug|| lunch lineage_mi439-ap2a-userdebug
+
 # Make cleaninstall
 make installclean
 echo "============="
