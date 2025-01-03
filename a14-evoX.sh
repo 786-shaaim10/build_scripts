@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/ProjectEverest/manifest -b 14 --git-lfs
+repo init -u https://github.com/EverestOS-AOSP/manifest -b 15 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -37,8 +37,8 @@ source build/envsetup.sh
 echo "====== Envsetup Done ======="
 
 # Lunch
-lunch everest_mi439-userdebug || lunch everest_mi439-ap3a-userdebug || lunch everest_mi439-ap2a-userdebug
-echo "============="
+#lunch everest_mi439-userdebug || lunch everest_mi439-ap3a-userdebug || lunch everest_mi439-ap2a-userdebug
+#echo "============="
 
 # one more 
 lunch lineage_mi439-userdebug || lunch lineage_mi439-ap4a-userdebug|| lunch lineage_mi439-ap2a-userdebug
@@ -48,4 +48,4 @@ make installclean
 echo "============="
 
 # Build rom
-mka everest 
+make everest
