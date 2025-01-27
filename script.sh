@@ -31,7 +31,7 @@ source build/envsetup.sh
 echo "============="
 
 # Lunch
-lunch aosp_mi439-ap2a-userdebug
+lunch aosp_mi439-userdebug || lunch aosp_mi439-ap2a-userdebug|| lunch aosp_mi439-ap4a-userdebug
 
 # Build
 mka bacon
