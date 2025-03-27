@@ -21,7 +21,7 @@ echo "Sync success"
 echo "============="
 
 # Export
-export BUILD_USERNAME=FARHAN
+export BUILD_USERNAME=chaaim
 export BUILD_HOSTNAME=crave
 export BUILD_BROKEN_MISSING_REQUIRED_MODULES=true
 echo "======= Export Done ======"
@@ -33,8 +33,7 @@ echo "====== Envsetup Done ======="
 # lunch fumking
 lunch afterlife_mi439-userdebug
 make installclean 
-m afterlife
-
+goafterlife mi439
 
 
 
